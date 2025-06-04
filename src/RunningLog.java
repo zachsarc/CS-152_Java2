@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class RunningLog {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in); // Initiate Scanner
-        System.out.println("Enter num of runs that you went on: "); //Prompts user to enter runs
+        System.out.println("Enter number of runs that you went on: "); //Prompts user to enter runs
         int numberOfRuns = sc.nextInt(); // Captures number of runs
         double distance;
         double totalDistance = 0;
@@ -42,3 +42,17 @@ public class RunningLog {
         sc.close();
     }
 }
+
+/* Example Output:
+Enter number of runs that you went on:
+2
+How long was the distance in miles? (Use Decimal Format):
+3.1
+What was the time in minutes? (Use Decimal Format):
+23.9
+How long was the distance in miles? (Use Decimal Format):
+3.5
+What was the time in minutes? (Use Decimal Format):
+24.2
+You're Average Pace Was 7.287878787878787 Minutes
+ */
