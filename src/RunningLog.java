@@ -7,7 +7,7 @@ public class RunningLog {
         int numberOfRuns = sc.nextInt(); // Captures number of runs
         double totalDistance = 0;
         double totalTime = 0;
-        double averagePace;
+        double overallAveragePace;
         double[][] runs = new double[numberOfRuns][2]; // Distance is runs[i][0], time is runs[i][1] respectively
         int runCounter = 1; // Introduced a run counter for tracking
 
@@ -29,13 +29,13 @@ public class RunningLog {
                 continue;
             }
             totalTime += runs[i][1]; // Adding next time value to total time
-            double eachPace = runs[i][1] / runs[i][0];
-            System.out.println("Run " + runCounter + " you had an average pace of " + eachPace + " minutes.");
+            double eachAveragePace = runs[i][1] / runs[i][0];
+            System.out.println("Run " + runCounter + " you had an average pace of " + eachAveragePace + " minutes.");
             System.out.println();
             runCounter++;
         }
-        averagePace = totalTime / totalDistance; // Computing average pace
-        System.out.println("Your Overall Average Pace Was " + averagePace + " Minutes"); // Did not format to 2 decimal places for better accuracy
+        overallAveragePace = totalTime / totalDistance; // Computing average pace
+        System.out.println("Your Overall Average Pace Was " + overallAveragePace + " Minutes"); // Did not format to 2 decimal places for better accuracy
         System.out.println();
 
         // Displaying table for readability alongside values
