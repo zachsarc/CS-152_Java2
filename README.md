@@ -62,3 +62,84 @@ public class RunningLog {
 }
 ```
 ***
+
+### Week 2: Single & Multi-Dimensional Arrays
+
+***
+
+## Locker Puzzle
+```java
+import java.util.Scanner;
+
+public class LockerPuzzle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // Declare a constant value for the number of lockers
+        System.out.print("Enter the total number of lockers: ");
+
+        // Handle the non-integer case
+        if (!sc.hasNextInt()) {
+            System.out.println("Invalid Integer for total number of lockers, Exiting...");
+            System.exit(0);
+        }
+        final int NUMBER_OF_LOCKER = sc.nextInt();
+        // Handle the negative-integer case
+        if (NUMBER_OF_LOCKER < 0) {
+            System.out.println("Entered a negative integer, exiting...");
+            System.exit(0);
+        }
+
+        // Declare a constant value for the total number of students
+        System.out.print("Enter the total number of students: ");
+        // Handle the non-integer case
+        if (!sc.hasNextInt()) {
+            System.out.println("Invalid Integer for total number of students, Exiting...");
+            System.exit(0);
+        }
+        int NUMBER_OF_STUDENTS = sc.nextInt();
+        // Handle the negative-integer case
+        if (NUMBER_OF_STUDENTS < 0) {
+            System.out.println("Entered a negative integer, exiting...");
+            System.exit(0);
+        }
+
+        // Handle to number of students > number of lockers
+        if (NUMBER_OF_STUDENTS > NUMBER_OF_LOCKER) {
+            NUMBER_OF_STUDENTS = NUMBER_OF_LOCKER;
+            System.out.println("Number of Students was changed to " + NUMBER_OF_STUDENTS);
+        }
+
+        // Create an array to store the status of each array
+        // The first student closed all lockers, each locker[i] is false
+        boolean[] lockers = new boolean[NUMBER_OF_LOCKER];
+
+        // Each student changes the lockers
+        for (int j = 1; j <= NUMBER_OF_STUDENTS; j++) {
+            // Student Sj changes every jth locker
+            // starting from the lockers[j - 1].
+            for (int i = j - 1; i < NUMBER_OF_LOCKER; i += j) {
+                lockers[i] = !lockers[i];
+            }
+        }
+
+        // Find which one is open
+        int totalLockersOpen = 0;
+        int totalLockersClosed = 0;
+        for (int i = 0; i < NUMBER_OF_LOCKER; i++) {
+            if (lockers[i]) {
+                System.out.println("Locker " + (i + 1) + " is open");
+                totalLockersOpen++;
+            } else {
+                totalLockersClosed++;
+            }
+        }
+
+        // Print Lines
+        System.out.println("The total number of students " + NUMBER_OF_STUDENTS);
+        System.out.println("The total number of lockers " + NUMBER_OF_LOCKER);
+        System.out.println("The total number of lockers open " + totalLockersOpen);
+        System.out.println("The total numbers of lockers closed " + totalLockersClosed);
+        sc.close();
+    }
+}
+```
