@@ -5,6 +5,7 @@
 > A Repo' for all of my ClassWork and  Projects that is currently ongoing
   - Week 0: Review of Java 1
   - Week 1: Big O Notation / Time & Space Complexities
+  - Week 2: Single & Multi-Dimensional Arrays [Week 2 Practice Problems]()
 
 ***
 
