@@ -3,8 +3,10 @@
 ## CS-152 at CT State College
 
 > A Repo' for all of my ClassWork and  Projects that is currently ongoing
+  - [Weekly Practice Problem Repo](https://github.com/zachsarc/CS-152-Java-Practice-Problems/tree/main)
   - Week 0: Review of Java 1
   - Week 1: Big O Notation / Time & Space Complexities
+  - Week 2: Single & Multi-Dimensional Arrays
 
 ***
 
