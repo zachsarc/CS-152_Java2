@@ -204,7 +204,7 @@ public class RunningLog {
 ```
 ***
 
-###Week 3: Recursion
+### Week 3: Recursion
 
 ## Harmonic Sequence and Lucas Numbers
 ```java
