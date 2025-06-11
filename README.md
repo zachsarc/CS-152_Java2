@@ -7,6 +7,7 @@
   - Week 0: Review of Java 1
   - Week 1: Big O Notation / Time & Space Complexities
   - Week 2: Single & Multi-Dimensional Arrays
+  - Week 3: Recursion
 
 ***
 
