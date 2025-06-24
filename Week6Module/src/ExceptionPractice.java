@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ExceptionPractice {
 
     public static double highTemperature() {
-        System.out.println("What was the highest temperature today? (in fahrenheit)");
+        System.out.println("What was the highest temperature today? (in Fahrenheit)");
         Scanner sc = new Scanner(System.in);
         double high = 0.0;
         try {
@@ -16,7 +16,7 @@ public class ExceptionPractice {
     }
 
     public static double lowTemperature() {
-        System.out.println("What was the lowest temperature today? (in fahrenheit");
+        System.out.println("What was the lowest temperature today? (in Fahrenheit)");
         Scanner sc = new Scanner(System.in);
         double low = 0.0;
         try {
@@ -31,7 +31,7 @@ public class ExceptionPractice {
     // Method to isolate validation
     public static void quickCheck(double high, double low) throws IllegalArgumentException {
         if (low > high) {
-            throw new IllegalArgumentException("High must be >= Low, Try again...");
+            throw new IllegalArgumentException(" High must be >= Low, Try again...");
         }
     }
 
@@ -55,3 +55,31 @@ public class ExceptionPractice {
         System.out.println("The range between the temperatures today was " + (high - low) + unicodeChar + " Fahrenheit");
     }
 }
+
+/*OUTPUT
+What was the highest temperature today? (in Fahrenheit)
+Thirty
+Please input a valid integer or decimal number.
+What was the highest temperature today? (in Fahrenheit)
+39.5
+What was the lowest temperature today? (in Fahrenheit)
+13.g
+Please input a valid integer or decimal number.
+What was the lowest temperature today? (in Fahrenheit)
+133
+Error: High must be >= Low, Try again...
+Try Again...
+
+What was the highest temperature today? (in Fahrenheit)
+13.3
+What was the lowest temperature today? (in Fahrenheit)
+13.4
+Error: High must be >= Low, Try again...
+Try Again...
+
+What was the highest temperature today? (in Fahrenheit)
+39.5
+What was the lowest temperature today? (in Fahrenheit)
+13.3
+The range between the temperatures today was 26.2° Fahrenheit
+ */
