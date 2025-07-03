@@ -8,14 +8,17 @@
   - Week 2: Big O Notation / Time & Space Complexities
   - Week 3: Single & Multi-Dimensional Arrays
   - Week 4: Recursion
+  - Week 5: Object-Oriented Programming Concepts (OOP)
+  - Week 6: Exception Handling & File I/O
+  - Week 7: JavaFX & GUI
 
 ***
 
-### Week 1: Review of Java 1
+## Week 1: Review of Java 1
 
 ***
 
-### Week 2: Big O Notation / Time & Space Complexities
+## Week 2: Big O Notation / Time & Space Complexities
 
 [Running Log](https://learn-us-east-1-prod-fleet01-beaker-xythos.content.blackboardcdn.com/5783dfb9d7a43/37905217?X-Blackboard-S3-Bucket=learn-xythos-edge-pr-otdt8jd8o9r1q7dp6ohjmnw5fghpnuse1b-s3alias&X-Blackboard-Expiration=1748649600000&X-Blackboard-Signature=389XVdn2Yh60mLZdrM6GaBxPjiFGqk4hkl5AsPaXtUk%3D&X-Blackboard-Client-Id=309004&X-Blackboard-S3-Region=us-east-1&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27Week2Project-Complexity%25281%2529.pdf&response-content-type=application%2Fpdf&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDED670VlXjOBo3xWP01OJO9PzB7NiAV%2FexK6i6wS94NgIhAOnJoGy%2B3eLDfbePGCKre4dJ9hxudsSIMjaHAAPZFhKyKrwFCKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTU2OTAzODYxMzYxIgxhiQOAdQu0i91%2Fs80qkAURUYe0c0FlcOQCZSMRUlOI9p42KK1UCZMA6f32F6sHlSBBfDdKkZQKV%2FXmNiX9a%2BCfyNGvfnmqaysLRp0RSCdyi%2FQjAI3H6gKQ6Co8ZjO2nMTpPTPFznME5Tc9PpkfQ4vYhXZz5iYHzFi2F4YPI66%2FgZnbU6v%2F8EOrmv9K5w2iKwijgWzidv1ZUd609zPxblB%2BWPEJ5ppdmHJhNTPNtduTXM%2B1K%2BUb11T75%2FR46VT%2FAreFSEdXONNTTnFIuooXKQn81F3k0xkAuTz96cmzA6oZH5CtaVdNYkIlz2EB9KJOj3PaS260Ss4HGkrwG6ddIbvOq5KXGUKan2154L9W30YfkqaFvDgHkBu8SKBO%2BaujM34uIKjFQIl7UnUjl%2FoH%2FkQ6UcUUqE1OYAV2JQ71pfDUQLJBV6ACjO1X0O1TMMe2lwcjHqYMqlWwVXn0LZTF7zkogaAUdFkhgroFSMeEfpKNVxagbWSTXKYqbRtDfOXuZUB%2B3i%2FjYFV62qPWl8wkGOQHtve1T5n0amnYX1b%2FQaQkhyuWKzDlL1llRfU2TMpuB2NTwyBjSLYrjkzGH5Yn1H9cGVetB9QRr5y0GPqU410NY9cWV1HbA37%2BoT9yQL6KYKQUNlcGhDDFViFBy%2BKDvsoU4WjV3wZJ6bRMp6CIwhp7cNXEzyu9ygWu7W4%2FHkSHUz4sxE%2Fu3SGp9JwfDl2sknuW1qFjYUF91S8iAvw48NqpO5PMqOUNgAiXYjCHNJMF4tvLC7fo1V8ylcxS3yXIE%2FQsHH5PE1myhp8nnqb4dis%2FGpc93Id89Wj4HAjigfHXF1WaCkZG6RuIehmuKTHJDeAo4FO1mApPgOHD9Hseqw2IRJift1j%2BHfxUNi76HoHepzDF5efBBjqwAYCAQULG60wmAsvk9AcKjzrp5Ub%2BF%2FO0%2BRpkvoEdZ7OM1JOg01AkZgmCzJR3YKF03CdybYnmfoW48o6Z8ewn7GWT4ry5KwLY8R2Pp5d5aqcwrDNH3HHGNQTrP4QiKV6kd6cjQvfAmI0qU%2BMYdLX1vwT91iJ1ZuqMWa%2BC1eQXzmTteGwUN0QT9EinveN%2BksCfl5CxbATQZ2w6yb4FzZ1NnrPyBy5DAP8gVh%2FFGiNqgVpw&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250530T180000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIAYDKQORRY5IZLOC5A%2F20250530%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1d22562ddbcf5463ec65ded593b3cdea1fecbf2557efcee3c6bdcc1f6c5dc42d)
 ```java
@@ -66,9 +69,9 @@ public class RunningLog {
 ```
 ***
 
-### Week 3: Single & Multi-Dimensional Arrays
+## Week 3: Single & Multi-Dimensional Arrays
 
-## Locker Puzzle
+### Locker Puzzle
 ```java
 import java.util.Scanner;
 
@@ -145,7 +148,7 @@ public class LockerPuzzle {
 }
 ```
 ***
-## RunningLog v1.1
+### RunningLog v1.1
 ```java
 import java.util.Scanner;
 
@@ -205,9 +208,9 @@ public class RunningLog {
 ```
 ***
 
-### Week 4: Recursion
+## Week 4: Recursion
 
-## Harmonic Sequence and Lucas Numbers
+### Harmonic Sequence and Lucas Numbers
 ```java
 public class Week4RecursionMain {
     public static void main (String[] args) {
@@ -246,7 +249,7 @@ public class Week4RecursionMain {
 }
 ```
 ***
-## GCD (a, b) Program
+### GCD (a, b) Program
 ```java
 /** INSTRUCTIONS:
  * Program to find the Greatest Common Divisor (GCD) using recursion.
@@ -300,3 +303,188 @@ public class Week3FindingGCD {
         }
     }
 ```
+***
+## Week 5: Object-Oriented Programming Concepts (OOP)
+### MainClass
+```java
+public class MainWeek5{
+	public static void main(String[] args){
+	//Main Method... DO NOT CHANGE THIS METHOD
+		Cat kitty = new Cat();
+		Dog puppy = new Dog();
+		Chihuahua buffy = new Chihuahua();
+		Cow bessie = new Cow();
+		Sheep aSheep = new Sheep();
+		Fox littleFox = new Fox();
+		kitty.Speak();
+		puppy.Speak();
+		buffy.Speak();
+		bessie.Speak();
+		aSheep.Speak();
+		littleFox.Speak();
+		System.out.println("The cow produces " + bessie.Milk() + " Gallons today.");
+		trySwimming(puppy);
+		trySwimming(buffy);
+		trySwimming(kitty);
+		trySwimming(bessie);
+		trySwimming(aSheep);
+		trySwimming(littleFox);
+	}
+	private static void trySwimming(Mammal currentMammal) {
+		if (currentMammal instanceof Dog || currentMammal instanceof Fox) {
+			System.out.print("Splash, paddle paddle ");
+			currentMammal.Speak();
+		} else if (currentMammal instanceof Cat) {
+			System.out.println("hiss");
+		} else {
+			currentMammal.Speak();
+		}
+
+	}
+}
+```
+### Mammal Class
+```java
+public abstract class Mammal{
+	public abstract void Speak();
+}
+```
+### Cat Class
+```java
+public class Cat extends Mammal {
+	public void Speak() {
+		System.out.println("Meow");
+	}
+}
+```
+### Chihuahua Class
+```java
+public class Chihuahua extends Dog {
+    public void Speak() {
+        System.out.println("Yip");
+    }
+}
+```
+### Cow Class
+```java
+public class Cow extends Mammal {
+    public void Speak() {
+        System.out.println("Moo");
+    }
+
+    public int Milk() {
+
+        // Define range
+        int max = 5;
+        int min = 2;
+        int range = max - min + 1;
+
+        // Generate and return a random number within 2 to 5
+        return (int) (Math.random() * range) + min;
+    }
+}
+```
+### Dog Class
+```java
+public class Dog extends Mammal {
+	public void Speak() {
+		System.out.println("Woof");
+	}
+
+}
+```
+### Fox Class
+```java
+import java.util.Scanner;
+public class Fox extends Mammal {
+
+    @Override
+    public void Speak() {
+        System.out.println("What does the fox say?");
+        Scanner sc = new Scanner(System.in);
+        String foxWords = sc.nextLine();
+
+        // Handling integer input
+        if (foxWords.matches("[0-9]*")) {
+            System.out.println("You entered no words :( | exiting...");
+            System.exit(0);
+        } else {
+            System.out.println(foxWords + "!");
+        }
+    }
+}
+```
+### Sheep Class
+```java
+public class Sheep extends Mammal {
+    public void Speak() {
+        System.out.println("Baa");
+    }
+}
+```
+***
+## Week 6: Exception Handling and File I/O
+### Temperature Exception Practice
+```java
+import java.util.InputMismatchException;
+import java.util.Scanner;
+public class ExceptionPractice {
+
+    public static double highTemperature() {
+        System.out.println("What was the highest temperature today? (in Fahrenheit)");
+        Scanner sc = new Scanner(System.in);
+        double high = 0.0;
+        try {
+            high = sc.nextDouble();
+            return high;
+        } catch (InputMismatchException IME) {
+            System.out.println("Please input a valid integer or decimal number.");
+            return highTemperature(); // Recursive call to rerun the method if invalid
+        }
+    }
+
+    public static double lowTemperature() {
+        System.out.println("What was the lowest temperature today? (in Fahrenheit)");
+        Scanner sc = new Scanner(System.in);
+        double low = 0.0;
+        try {
+            low = sc.nextDouble();
+            return low;
+        } catch (InputMismatchException IME) {
+            System.out.println("Please input a valid integer or decimal number.");
+            return lowTemperature();
+        }
+    }
+
+    // Method to isolate validation
+    public static void quickCheck(double high, double low) throws IllegalArgumentException {
+        if (low > high) {
+            throw new IllegalArgumentException(" High must be >= Low, Try again...");
+        }
+    }
+
+    public static void main(String[] args) {
+        char unicodeChar = '°'; // Added Unicode char for readability and user-friendliness
+        double high = 0.0;
+        double low = 0.0;
+        // Loop ensures the user keeps trying until true
+        while (true) {
+            high = highTemperature();
+            low = lowTemperature();
+
+            try {
+                quickCheck(high, low);
+                break;
+            } catch (IllegalArgumentException e) {
+                System.out.println("Error:" + e.getMessage());
+                System.out.println("Try Again...\n");
+            }
+        }
+        System.out.println("The range between the temperatures today was " + (high - low) + unicodeChar + " Fahrenheit");
+    }
+}
+```
+***
+## Week 7: JavaFX GUI Running Log
+## Please refer to [this](https://github.com/zachsarc/CS-152-RunningLogGUIJavaFX/tree/main) Repository for the Week 7 exercise.
+***
