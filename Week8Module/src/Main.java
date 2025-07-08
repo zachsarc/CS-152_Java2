@@ -68,3 +68,16 @@ public class Main {
         return squaredList;
     }
 }
+
+/* OUTPUT
+The collection contains [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+The sum of these elements are 30.0
+
+The recursive adding these elements produces a total of 30.0
+
+The mean of these numbers of the list [3, 6, 10, 4, 2, 5] is 5
+
+The squared result of each of these numbers in the list [3, 6, 10, 4, 2, 5] is [9, 36, 100, 16, 4, 25]
+
+ */
