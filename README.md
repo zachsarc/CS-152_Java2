@@ -10,7 +10,7 @@
   - Week 4: Recursion
   - Week 5: Object-Oriented Programming Concepts (OOP)
   - Week 6: Exception Handling & File I/O
-  - Week 7: JavaFX & GUI
+  - Week 7: JavaFX & GUI (Seperate Repo.)
   - Week 8: Lists
 
 ***
