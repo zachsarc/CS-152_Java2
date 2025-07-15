@@ -12,6 +12,7 @@
   - Week 6: Exception Handling & File I/O
   - Week 7: JavaFX & GUI (Seperate Repo.)
   - Week 8: Lists
+  - Week 9: Stack and Queue
 
 ***
 
@@ -560,6 +561,169 @@ public class Main {
             squaredList.add(number * number);
         }
         return squaredList;
+    }
+}
+```
+***
+## Week 9: Stack and Queue
+## Stack and Queue Exercise
+```java
+import java.util.Scanner;
+        public class Main {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                MyStack<Integer> stack = new MyStack<>();
+                MyQueue<Integer> queue = new MyQueue<>();
+
+                while (true) {
+                    System.out.println("Enter the integers of your stack one-by-one, when your done type \"done\": ");
+                    String input = sc.next();
+
+                    if (input.equalsIgnoreCase("done")) {
+                        break;
+                    }
+
+                    try {
+                        int number = Integer.parseInt(input);
+                        stack.push(number);
+                        System.out.println("You entered: " + number);
+                        stack.display();
+                    } catch (NumberFormatException e) {
+                        System.out.println("Please enter a valid integer or 'done'");
+                    }
+                }
+                System.out.println("Next, here is your sorted stack: ");
+                stack.getMin();
+                stack.displaySorted();
+
+                // Queue Portion
+                while (true) {
+                    System.out.println("Enter the integers of your queue one-by-one, when your done type \"done\": ");
+                    String input = sc.next();
+
+                    if (input.equalsIgnoreCase("done")) {
+                        break;
+                    }
+
+                    try {
+                        int number = Integer.parseInt(input);
+                        queue.enqueue(number);
+                        System.out.println("You entered: " + number);
+                        queue.display();
+                    } catch (NumberFormatException e) {
+                        System.out.println("Please enter a valid integer or 'done'");
+                    }
+                }
+                System.out.println("Next, here is your sorted queue: ");
+                queue.getMin();
+                queue.displaySorted();
+
+                sc.close();
+        }
+    }
+```
+### MyStack extension of Main
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+
+class MyStack<T extends Comparable<T>> {
+    private LinkedList<T> stack = new LinkedList<>();
+    private LinkedList<T> minStack = new LinkedList<>();
+
+    public void push(T element) {
+        stack.push(element);
+        if (minStack.isEmpty() || element.compareTo(minStack.peek()) <= 0) {
+            minStack.push(element);
+        }
+    }
+
+    public T pop() {
+        if (stack.isEmpty()) return null;
+
+        T popped = stack.pop();
+        if (popped.equals(minStack.peek())) {
+            minStack.pop();
+        }
+        return popped;
+    }
+
+    public T peek() {
+        return stack.peek();
+    }
+
+    public boolean isEmpty() {
+        return stack.isEmpty();
+    }
+
+    public void display() {
+        System.out.println("Stack: " + stack);
+    }
+
+    public void displaySorted() {
+        ArrayList<T> sortedList = new ArrayList<>(stack);
+        Collections.sort(sortedList);
+        System.out.println("Sorted Stack: " + sortedList);
+    }
+
+    public T getMin() {
+        if (minStack.isEmpty()) return null;
+        return minStack.peek();
+    }
+}
+```
+### MyQueue extension of Main class
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+class MyQueue<T extends Comparable<T>> {
+    private LinkedList<T> queue = new LinkedList<>();
+    private LinkedList<T> minQueue = new LinkedList<>();
+
+
+    public void enqueue(T element) {
+        queue.addLast(element);
+        while (!minQueue.isEmpty() && minQueue.getLast().compareTo(element) > 0) {
+            minQueue.removeLast();
+        }
+        minQueue.addLast(element);
+    }
+
+    public T dequeue() {
+        if (queue.isEmpty()) return null;
+
+        T removed = queue.pollFirst();
+        if (removed.equals(minQueue.getFirst())) {
+            minQueue.removeFirst();
+        }
+        return removed;
+    }
+
+    public T peek() {
+        return queue.peekFirst();
+    }
+
+    public boolean isEmpty() {
+        return queue.isEmpty();
+    }
+
+    public void display() {
+        System.out.println("Queue: " + queue);
+    }
+
+    public void displaySorted() {
+        List<T> sortedQueue = new ArrayList<>(queue);
+        Collections.sort(sortedQueue);
+        System.out.println("Sorted Queue: " + sortedQueue);
+    }
+
+    public T getMin() {
+        if (minQueue.isEmpty()) return null;
+        return minQueue.getFirst();
     }
 }
 ```
