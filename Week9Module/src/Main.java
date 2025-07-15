@@ -51,3 +51,47 @@ import java.util.Scanner;
                 sc.close();
         }
     }
+
+    /* OUTPUT
+    Enter the integers of your stack one-by-one, when your done type "done":
+2
+You entered: 2
+Stack: [2]
+Enter the integers of your stack one-by-one, when your done type "done":
+56
+You entered: 56
+Stack: [56, 2]
+Enter the integers of your stack one-by-one, when your done type "done":
+12
+You entered: 12
+Stack: [12, 56, 2]
+Enter the integers of your stack one-by-one, when your done type "done":
+356
+You entered: 356
+Stack: [356, 12, 56, 2]
+Enter the integers of your stack one-by-one, when your done type "done":
+done
+Next, here is your sorted stack:
+Sorted Stack: [2, 12, 56, 356]
+Enter the integers of your queue one-by-one, when your done type "done":
+4
+You entered: 4
+Queue: [4]
+Enter the integers of your queue one-by-one, when your done type "done":
+7
+You entered: 7
+Queue: [4, 7]
+Enter the integers of your queue one-by-one, when your done type "done":
+1
+You entered: 1
+Queue: [4, 7, 1]
+Enter the integers of your queue one-by-one, when your done type "done":
+34
+You entered: 34
+Queue: [4, 7, 1, 34]
+Enter the integers of your queue one-by-one, when your done type "done":
+done
+Next, here is your sorted queue:
+Sorted Queue: [1, 4, 7, 34]
+
+     */
