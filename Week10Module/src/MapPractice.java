@@ -20,7 +20,7 @@ public class MapPractice {
         System.out.println(mp.get(4));
         mp.put(4, "X");
         System.out.println("Contents: " + mp);
-        System.out.println(mp.get(4));
+        System.out.println("mp.get " + mp.get(4));
         System.out.println(mp.size());
         System.out.println(mp.remove(5));
         System.out.println("Contents: " + mp);
