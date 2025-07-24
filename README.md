@@ -13,7 +13,7 @@
   - Week 7: JavaFX & GUI (Seperate Repo.)
   - Week 8: Lists
   - Week 9: Stack and Queue
-  - Week 10: 
+  - Week 10: Sets and Maps
 
 ***
 
