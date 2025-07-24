@@ -1,5 +1,3 @@
-import java.util.Comparator;
-
 public class MyEntry {
     int key;
     String value;
