@@ -23,7 +23,7 @@ import java.util.Scanner;
                     }
                 }
                 System.out.println("Next, here is your sorted stack: ");
-                stack.getMin();
+                System.out.println("The minimum element in the stack is: " + stack.getMin());
                 stack.displaySorted();
 
                 // Queue Portion
