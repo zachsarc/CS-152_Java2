@@ -1106,4 +1106,4 @@ public class QuickSortMain {
 ***
 ## Week 12: Sorting
 ## Graphs (Depth-First & Breadth-First Search, Minimum Spanning Tree, Dijkstra's Algorithm) & Review Week
-![Week 12 Graphs Assignment](Week12Assignment-Graphs.pdf)
+![Week 12 Graphs Assignment](Week12Assignment.png)
