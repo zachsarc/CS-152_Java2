@@ -2,7 +2,7 @@
 
 ## CS-152 at CT State College
 
-> A Repo' for all of my ClassWork and  Projects that is currently ongoing
+> A Repo' for all of my ClassWork and  Projects
   - [Weekly Practice Problem Repo](https://github.com/zachsarc/CS-152-Java-Practice-Problems/tree/main)
   - Week 1: Review of Java 1
   - Week 2: Big O Notation / Time & Space Complexities
@@ -1107,3 +1107,10 @@ public class QuickSortMain {
 ## Week 12: Sorting
 ## Graphs (Depth-First & Breadth-First Search, Minimum Spanning Tree, Dijkstra's Algorithm) & Review Week
 ![Week 12 Graphs Assignment](Week12Module/Week12Assignment.png)
+***
+## Week 13: Final Project
+## Running Log w/ Java FX
+[Seperate Repo](https://github.com/zachsarc/CS-152-Final-Project)
+
+# You've Reached the end. Thank You!!
+
