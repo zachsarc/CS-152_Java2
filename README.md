@@ -1110,7 +1110,7 @@ public class QuickSortMain {
 ***
 ## Week 13: Final Project
 ## Running Log w/ Java FX
-[Seperate Repo](https://github.com/zachsarc/CS-152-Final-Project)
+[Seperate Repo]([https://github.com/zachsarc/CS152_Final-Project/tree/main])
 
 # You've Reached the end. Thank You!!
 
